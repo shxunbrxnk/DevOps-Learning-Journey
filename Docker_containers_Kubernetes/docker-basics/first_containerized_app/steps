@@ -1,0 +1,17 @@
+## these are the excution steps, 
+- build the image
+- run a container based of that image and expose it through a port
+- check running containers
+- access the web app via exposed port
+- stop container
+- remove container
+
+## steps
+
+1) docker build . #note we did not add a tag
+2) docker run -p 3000:80 "paste image ID "
+3) docker ps #check running containers
+4) localhost:3000 #on your browser to check if the web app is working
+5) docker stop #this will stop the container
+6) docker rm "paste container name or container ID from docker ps " 
+
